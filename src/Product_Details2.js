@@ -1,0 +1,1 @@
+document.getElementById("StyleJs").style.color = "purple";

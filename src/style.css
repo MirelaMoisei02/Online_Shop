@@ -1,0 +1,310 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    /*background-image:url(860_main_library_bacteria.png);*/
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:650px;
+    background-position:center;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+/*-------logo-------*/
+h1{
+font-size:50px;
+text-align: center;
+color:aliceblue;
+background-color:#5938C7;
+}
+/*-------dropdown nav bar-------*/
+.menu-bar{
+    background:rgb(22, 0, 64);
+    text-align:center;
+    z-index: 3;
+}
+.menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+    color:#FFFFFF  ;
+}
+.menu-bar ul li{
+    width:100px;
+    margin:10px;
+    padding:15px;
+}
+.menu-bar ul li a{
+    text-decoration:none;
+    color:#FFF;
+}
+.active, .menu-bar ul li:hover{
+    background:#5938C7 ;
+    border-radius:3px;
+}
+.sub-menu1{
+    display:none;
+}
+.menu-bar ul li:hover .sub-menu1{
+    display:block;
+    position:absolute;
+    background:rgba(0, 10, 0, 1);
+    margin-top:15px;
+    margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+    display:block;
+    margin:10px;
+}
+.menu-bar ul li:hover .sub-menu1 li{
+    width:150px;
+    padding:10px;
+    border-bottom:1px dotted #FFFFFF;
+    background:transparent;
+    border-radius:0;
+    text-align:left;
+}
+.menu-bar ul li:hover .sub-menu1 li:last-child{
+    border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu1 li a:hover{
+    color:#9580DB ;
+}
+.sub-menu2{
+    display:none;
+}
+.hover-me:hover .sub-menu2{
+   position:absolute;
+   display:block;
+   margin-top: -40px;
+   margin-left: 140px;
+   background:rgba(0, 10, 0, 1) ;
+
+}
+/*-------products-------*/
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color:black;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+h4{
+    color: black;
+    font-weight: normal;
+}
+.col-4 p{
+font-size: 14px;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.contact-title{
+    text-align: left;
+    color: black;
+}
+.not-underline{
+    text-decoration: none;
+}
+/*-------product details-------*/
+.single-product{
+    margin-top: 0px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid blueviolet;
+}
+input:focus{
+    outline: none;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 25%;
+    cursor: pointer;
+    margin: 0;
+}
+/*-------event discount-------*/
+.Demo{
+    margin-left: 150px;
+    color: red;
+    cursor: pointer;
+}
+/*---------------------*/
+.btn{
+    display: inline-block;
+    background: #5938C7;
+    color:#fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #321b3e;
+}
+/*-------cart-------*/
+.cart-page{
+    margin: 10px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #5938C7;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #5938C7;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #5938C7;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: center;
+}
+th:last-child{
+    text-align: center;
+}
+/*-------conn-------*/
+.account-page{
+    padding: 50px 0;
+    background: white;
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #5938C7;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+.dynamic{
+left:100px;
+}
+h3{
+    color: #555;
+}
